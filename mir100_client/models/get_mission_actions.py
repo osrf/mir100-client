@@ -32,7 +32,7 @@ class GetMissionActions(object):
         'action_type': 'str',
         'guid': 'str',
         'mission_id': 'str',
-        'parameters': 'str',
+        'parameters': 'list[object]',
         'priority': 'int',
         'url': 'str'
     }
@@ -143,7 +143,7 @@ class GetMissionActions(object):
 
 
         :return: The parameters of this GetMissionActions.  # noqa: E501
-        :rtype: str
+        :rtype: list[object]
         """
         return self._parameters
 
@@ -153,7 +153,7 @@ class GetMissionActions(object):
 
 
         :param parameters: The parameters of this GetMissionActions.  # noqa: E501
-        :type: str
+        :type: list[object]
         """
 
         self._parameters = parameters

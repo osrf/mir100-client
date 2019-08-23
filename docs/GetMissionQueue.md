@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **mission** | **str** | The url to the mission that mission that was executed | [optional] 
 **mission_id** | **str** | The global id of the mission that was executed | [optional] 
 **ordered** | **datetime** | The date end time when the mission was queued | [optional] 
-**parameters** | **str** |  | [optional] 
+**parameters** | **list[object]** |  | [optional] 
 **priority** | **int** | The id of the action | [optional] 
 **started** | **datetime** | The date and time when the missin was started | [optional] 
 **state** | **str** | The end state after the mission was executed | [optional] 

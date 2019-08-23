@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **mission** | **str** | The url to the mission details | [optional] 
 **mission_id** | **str** | The global id of the mission that was executed | [optional] 
 **name** | **str** | A more detailed explanation of the attribute | [optional] 
-**parameters** | **str** |  | [optional] 
+**parameters** | **list[object]** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

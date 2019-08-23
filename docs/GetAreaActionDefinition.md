@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **help** | **str** | A description of this action | [optional] 
 **limit** | **int** | The amount of actions of this type we can add. | [optional] 
 **name** | **str** | A nice name associated with this area action | [optional] 
-**parameters** | **str** |  | [optional] 
+**parameters** | **list[object]** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

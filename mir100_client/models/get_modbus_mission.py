@@ -37,7 +37,7 @@ class GetModbusMission(object):
         'mission': 'str',
         'mission_id': 'str',
         'name': 'str',
-        'parameters': 'str'
+        'parameters': 'list[object]'
     }
 
     attribute_map = {
@@ -273,7 +273,7 @@ class GetModbusMission(object):
 
 
         :return: The parameters of this GetModbusMission.  # noqa: E501
-        :rtype: str
+        :rtype: list[object]
         """
         return self._parameters
 
@@ -283,7 +283,7 @@ class GetModbusMission(object):
 
 
         :param parameters: The parameters of this GetModbusMission.  # noqa: E501
-        :type: str
+        :type: list[object]
         """
 
         self._parameters = parameters

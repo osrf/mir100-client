@@ -473,7 +473,12 @@ for definition in def_handler.definitions:
   required = []
   for prop in definition['properties']:
     prop_oapi = {}
-    prop_oapi.update(to_oapi_schema(prop['schema']))
+    # parameters is wrongly set as string somethings in the pdf
+    if prop['name'] == 'parameters':
+      prop_oapi['type'] = 'array'
+      prop_oapi['items'] = {'type': 'object'}
+    else:
+      prop_oapi.update(to_oapi_schema(prop['schema']))
     if len(prop['desc']):
       prop_oapi['description'] = prop['desc']
     props_oapi[prop['name']] = prop_oapi

@@ -41,7 +41,7 @@ class GetMissionQueue(object):
         'mission': 'str',
         'mission_id': 'str',
         'ordered': 'datetime',
-        'parameters': 'str',
+        'parameters': 'list[object]',
         'priority': 'int',
         'started': 'datetime',
         'state': 'str'
@@ -400,7 +400,7 @@ class GetMissionQueue(object):
 
 
         :return: The parameters of this GetMissionQueue.  # noqa: E501
-        :rtype: str
+        :rtype: list[object]
         """
         return self._parameters
 
@@ -410,7 +410,7 @@ class GetMissionQueue(object):
 
 
         :param parameters: The parameters of this GetMissionQueue.  # noqa: E501
-        :type: str
+        :type: list[object]
         """
 
         self._parameters = parameters

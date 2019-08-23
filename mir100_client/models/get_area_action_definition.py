@@ -34,7 +34,7 @@ class GetAreaActionDefinition(object):
         'help': 'str',
         'limit': 'int',
         'name': 'str',
-        'parameters': 'str'
+        'parameters': 'list[object]'
     }
 
     attribute_map = {
@@ -189,7 +189,7 @@ class GetAreaActionDefinition(object):
 
 
         :return: The parameters of this GetAreaActionDefinition.  # noqa: E501
-        :rtype: str
+        :rtype: list[object]
         """
         return self._parameters
 
@@ -199,7 +199,7 @@ class GetAreaActionDefinition(object):
 
 
         :param parameters: The parameters of this GetAreaActionDefinition.  # noqa: E501
-        :type: str
+        :type: list[object]
         """
 
         self._parameters = parameters
